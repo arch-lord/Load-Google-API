@@ -1,0 +1,8 @@
+{
+  "apiKey": "XXX",
+  "clientId": "XXX.apps.googleusercontent.com",
+  "scope": [
+    "profile",
+    "https://www.google.com/m8/feeds/"
+  ]
+}
