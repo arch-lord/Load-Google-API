@@ -1,8 +1,8 @@
 {
   "name": "load-google-api",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Easily load Google API via webpack",
-  "main": "lib/load-google-api.js",
+  "main": "lib/load-google-api-min.js",
   "scripts": {
     "build": "webpack --env build",
     "dev": "node ./dev-server.js",
