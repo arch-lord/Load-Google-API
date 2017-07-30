@@ -11,6 +11,7 @@ export default class LoadGoogleAPI {
     this._clientURL = `https://apis.google.com/js/client.js?onload=${this._callbackName}`;
     this._apiKey = options.apiKey;
     this._clientId = options.clientId;
+    this._discoveryDocs = options.discoveryDocs;
     this._scope = options.scope.join(' ');
     this.name = 'load-google-api';
   }
@@ -50,6 +51,7 @@ export default class LoadGoogleAPI {
       window.gapi.client.init({
         apiKey: this._apiKey,
         client_id: this._clientId,
+        discoveryDocs: this._discoveryDocs,
         scope: this._scope
       }).then(resolve);
     });
